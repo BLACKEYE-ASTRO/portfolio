@@ -7,19 +7,17 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 100vw;
-  padding: 58px 10%;
+  width: 100%;
+  padding: 58px 2%;
   gap: 10px;
 }
 
 .text h2 {
-  font-size: 30px;
   font-weight: 700;
   letter-spacing: 4px;
 }
 
 .text p {
-  font-size: 25px;
   font-weight: 400;
   letter-spacing: 2px;
 }
@@ -41,14 +39,15 @@
 .link a {
   color: var(--color-text);
   text-decoration: none;
-  font-size: 25px;
+
   font-weight: 400;
+  letter-spacing: 1.5px;
 }
 
 @media screen and (max-width: 830px) {
   .container {
     flex-direction: column;
-    gap: 20px;
+    gap: 23px;
   }
 
   .text {
@@ -56,12 +55,20 @@
     flex-direction: column;
     align-items: center;
   }
-  .link{
-    gap: 10px;
-  }
-  .link a{
+
+  .text h2 {
     font-size: 20px;
-    letter-spacing: 0;
   }
-  
+
+  .text p {
+    font-size: 16px;
+  }
+
+  .links {
+    align-items: start;
+  }
+
+  .link a {
+    font-size: 16px;
+  }
 }
