@@ -25,8 +25,8 @@ const Hero = () => {
         alt="Akash Shingare"
         className={styles.heroImg}
       />
-      <div className={styles.topBlur}></div>
-      <div className={styles.bottomBlur}></div>
+      {/* <div className={styles.topBlur}></div> */}
+      {/* <div className={styles.bottomBlur}></div> */}
     </section>
   );
 };
