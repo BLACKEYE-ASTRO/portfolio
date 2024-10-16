@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faTelegram, faLinkedin } from "@fortawesome/free-brands-svg-icons"; // Importing brand icons
+import { faGithub, faTelegram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
@@ -54,44 +55,57 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((nav) => (
-            <li
+            <motion.a
               key={nav.id}
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 0.9 }}
+              transition={{ type: "spring", stiffness: 400, damping: 17 }}
+              href={`#${nav.id}`}
               className={`${
                 active === nav.title ? "text-white" : "text-secondary"
               } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
-              <a href={`#${nav.id}`}>{nav.title}</a>
-            </li>
+              {nav.title}
+            </motion.a>
           ))}
         </ul>
 
         {/* Social Media Icons (Visible on desktop only) */}
         <div className="hidden sm:flex items-center gap-4">
-          <a
+          <motion.a
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.9 }}
+            transition={{ type: "spring", stiffness: 400, damping: 17 }}
             href="https://linkedin.com/in/akash-shingare-723197181"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white hover:text-gray-400"
+            className="text-gray-400 hover:text-white"
           >
-            <FontAwesomeIcon icon={faLinkedin} size="xl" />
-          </a>
-          <a
+            <FontAwesomeIcon icon={faLinkedin} size="xl"/>
+          </motion.a>
+          <motion.a
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.9 }}
+            transition={{ type: "spring", stiffness: 400, damping: 17 }}
             href="https://github.com/BLACKEYE-ASTRO"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white hover:text-gray-400"
+            className="text-gray-400 hover:text-white"
           >
-            <FontAwesomeIcon icon={faGithub} size="xl" />
-          </a>
-          <a
+            <FontAwesomeIcon icon={faGithub} size="xl"  />
+          </motion.a>
+          <motion.a
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.9 }}
+            transition={{ type: "spring", stiffness: 400, damping: 17 }}
             href="https://telegram.org"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white hover:text-gray-400"
+            className="text-gray-400 hover:text-white"
           >
-            <FontAwesomeIcon icon={faTelegram} size="xl" />
-          </a>
+            <FontAwesomeIcon icon={faTelegram} size="xl"  />
+          </motion.a>
         </div>
 
         {/* Mobile Menu */}
@@ -110,8 +124,12 @@ const Navbar = () => {
           >
             <ul className="list-none flex justify-end items-start flex-1 flex-col gap-4">
               {navLinks.map((nav) => (
-                <li
+                <motion.a
                   key={nav.id}
+                  whileHover={{ scale: 1.2 }}
+                  whileTap={{ scale: 0.9 }}
+                  transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                  href={`#${nav.id}`}
                   className={`font-poppins font-medium cursor-pointer text-[16px] ${
                     active === nav.title ? "text-white" : "text-secondary"
                   }`}
@@ -120,8 +138,8 @@ const Navbar = () => {
                     setActive(nav.title);
                   }}
                 >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
-                </li>
+                  {nav.title}
+                </motion.a>
               ))}
             </ul>
           </div>
