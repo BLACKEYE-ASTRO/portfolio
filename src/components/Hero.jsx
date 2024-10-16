@@ -1,15 +1,13 @@
 import { motion } from "framer-motion";
+
 import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas"; // Importing the canvas with Three.js elements
+import { ComputersCanvas } from "./canvas";
 
 const Hero = () => {
-  // Detect mobile devices for potential canvas adjustments
-  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
-        className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
+        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
         <div className='flex flex-col justify-center items-center mt-5'>
           <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
@@ -21,21 +19,13 @@ const Hero = () => {
             Hi, I'm <span className='text-[#915EFF]'>Akash</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I craft dynamic user interfaces,
-            <br className='sm:block hidden' />
+            I craft dynamic user interfaces,<br className='sm:block hidden' />
             seamless web experiences, and responsive websites.
           </p>
         </div>
       </div>
 
-      {/* Render ComputersCanvas only if not mobile, or use optimized settings for mobile */}
-      {!isMobile ? (
-        <ComputersCanvas /> // Render full Three.js scene on desktop/tablet
-      ) : (
-        <div className="w-full h-[200px] bg-cover bg-center" style={{ backgroundImage: `url('/path/to/fallback-image.jpg')` }}>
-          {/* Fallback static image or simpler canvas for mobile */}
-        </div>
-      )}
+      <ComputersCanvas />
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>
