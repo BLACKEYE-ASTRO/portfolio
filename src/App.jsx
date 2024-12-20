@@ -1,7 +1,7 @@
 import React, { lazy, Suspense } from "react";
 import { BrowserRouter } from "react-router-dom";
 
-import { Navbar, Hero, StarsCanvas, Footer } from "./components";
+import { Navbar, Hero,Footer } from "./components";
 
 // Lazy load components
 const About = lazy(() => import("./components/About"));

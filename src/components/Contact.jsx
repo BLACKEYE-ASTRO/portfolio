@@ -30,10 +30,11 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
+    // Ensure the values are passed as strings
     emailjs
       .send(
-        service_04rydye,
-        template_mh0hd5b,
+        "service_04rydye", // Make sure the service ID is a string
+        "template_mh0hd5b", // Make sure the template ID is a string
         {
           from_name: form.name,
           to_name: "Akash Shingare",
@@ -41,7 +42,7 @@ const Contact = () => {
           to_email: "akashshingare2003@gmail.com",
           message: form.message,
         },
-        LjazLs5mLQjY4mt_n
+        "LjazLs5mLQjY4mt_n" // Make sure the public key is a string
       )
       .then(
         () => {
@@ -64,7 +65,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="xl:mt-12  flex flex-col-reverse md:flex-row  gap-10 overflow-hidden">
+    <div className="xl:mt-12 flex flex-col-reverse md:flex-row gap-10 overflow-hidden">
       {/* Contact Form Section */}
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
