@@ -30,6 +30,8 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import Hero_Img from "./Hero_Img.png";
+
 export {
   logo,
   backend,
@@ -59,4 +61,5 @@ export {
   carrent,
   jobit,
   tripguide,
+  Hero_Img,
 };
