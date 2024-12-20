@@ -33,8 +33,8 @@ const Contact = () => {
     // Ensure the values are passed as strings
     emailjs
       .send(
-        "service_04rydye", // Make sure the service ID is a string
-        "template_mh0hd5b", // Make sure the template ID is a string
+        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID, // Make sure the service ID is a string
+        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID, // Make sure the template ID is a string
         {
           from_name: form.name,
           to_name: "Akash Shingare",
@@ -42,7 +42,7 @@ const Contact = () => {
           to_email: "akashshingare2003@gmail.com",
           message: form.message,
         },
-        "LjazLs5mLQjY4mt_n" // Make sure the public key is a string
+        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       )
       .then(
         () => {
