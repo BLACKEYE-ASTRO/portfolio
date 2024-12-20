@@ -53,7 +53,7 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop Menu */}
-        <ul className="list-none hidden md:flex flex-row gap-10">
+        <ul className="list-none hidden lg:flex flex-row gap-10">
           {navLinks.map((nav) => (
             <motion.a
               key={nav.id}
@@ -72,7 +72,7 @@ const Navbar = () => {
         </ul>
 
         {/* Social Media Icons (Visible on desktop only) */}
-        <div className="hidden md:flex items-center gap-4">
+        <div className="hidden lg:flex items-center gap-4">
           <motion.a
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9 }}
@@ -109,7 +109,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu */}
-        <div className="md:hidden flex flex-1 justify-end items-center">
+        <div className="lg:hidden flex flex-1 justify-end items-center">
           <img
             src={toggle ? close : menu}
             alt="menu"

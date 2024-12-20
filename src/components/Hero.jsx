@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
-        className={`absolute inset-0 top-[120px] md:top-[220px]  max-w-7xl mx-auto ${styles.paddingX} flex lg:flex-row flex-col-reverse items-start gap-5`}
+        className={`absolute inset-0 top-[120px] sm:top-[220px]  max-w-7xl mx-auto ${styles.paddingX} flex lg:flex-row flex-col-reverse items-start gap-5 mb-28 md:mb-0`}
       >
         <div className="flex gap-5">
           <div className='flex flex-col justify-center items-center mt-5'>
@@ -26,12 +26,12 @@ const Hero = () => {
           </div>
         </div>
         <div>
-          <img src={Hero_Img} alt="" className=" rounded-full md:ml-10 w-[300px] md:mt-0 " />
+          <img src={Hero_Img} alt="" className=" rounded-full md:ml-10 w-[200px] lg:w-[300px] md:mt-0 " />
         </div>
       </div>
 
 
-      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center '>
+      <div className='absolute xs:bottom-10 bottom-0 w-full flex justify-center items-center '>
         <a href='#about'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
             <motion.div
