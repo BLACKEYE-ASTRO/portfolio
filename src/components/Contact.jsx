@@ -126,9 +126,14 @@ const Contact = () => {
 
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
-        className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
+        className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px] p-8 flex flex-col justify-center items-center text-center text-white'
       >
-        {/* <EarthCanvas /> */}
+        <h3 className={`${styles.sectionHeadText} mb-4`}>
+          Let's build something extraordinary, together!
+        </h3>
+        <p className={`${styles.sectionSubText}`}>
+          As a passionate developer, I thrive on transforming challenges into innovative solutions through code. Whether you're aiming to create impactful projects or venture into uncharted territories, I'm here to collaborate. Reach out, and let's turn your ideas into remarkable digital experiences.
+        </p>
       </motion.div>
     </div>
 

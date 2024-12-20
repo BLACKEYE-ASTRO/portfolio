@@ -7,30 +7,31 @@ const Hero = () => {
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
-        className={`absolute inset-0 top-[120px] lg:top-[220px]  max-w-7xl mx-auto ${styles.paddingX} flex md:flex-row flex-col-reverse items-start gap-5`}
+        className={`absolute inset-0 top-[120px] md:top-[220px]  max-w-7xl mx-auto ${styles.paddingX} flex lg:flex-row flex-col-reverse items-start gap-5`}
       >
-        <div className='flex flex-col justify-center items-center mt-5'>
-          <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
-          <div className='w-1 sm:h-80 h-40 violet-gradient' />
-        </div>
+        <div className="flex gap-5">
+          <div className='flex flex-col justify-center items-center mt-5'>
+            <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
+            <div className='w-1 sm:h-80 h-40 violet-gradient' />
+          </div>
 
-        <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#915EFF]'>Akash</span>
-          </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I craft dynamic user interfaces,<br className='sm:block hidden' />
-            seamless web experiences, and responsive websites.
-          </p>
+          <div>
+            <h1 className={`${styles.heroHeadText} text-white`}>
+              Hi, I'm <span className='text-[#915EFF]'>Akash</span>
+            </h1>
+            <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+              I craft dynamic user interfaces,<br className='sm:block hidden' />
+              seamless web experiences, and responsive websites.
+            </p>
+          </div>
         </div>
-
         <div>
-          <img src={Hero_Img} alt="" className=" rounded-full md:ml-10 w-[300px] " />
+          <img src={Hero_Img} alt="" className=" rounded-full md:ml-10 w-[300px] md:mt-0 " />
         </div>
       </div>
 
-      
-      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
+
+      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center '>
         <a href='#about'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
             <motion.div
