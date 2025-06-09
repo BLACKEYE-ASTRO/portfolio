@@ -23,7 +23,7 @@ import threejs from "./tech/threejs.svg";
 
 import looking from "./lookingup business solutions.png"
 import carrent from "./carrent.png";
-import jobit from "./jobit.png";
+import relifeagro_farm from "./relifeagro_farm.png";
 import tripguide from "./tripguide.png";
 
 import Hero_Img from "./Hero_Img.png";
@@ -52,7 +52,7 @@ export {
   threejs,
   looking,
   carrent,
-  jobit,
   tripguide,
   Hero_Img,
+  relifeagro_farm
 };

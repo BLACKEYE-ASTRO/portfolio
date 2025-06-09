@@ -14,7 +14,7 @@ import {
   mongodb,
   git,
   figma,
-  jobit,
+  relifeagro_farm,
   tripguide,
   threejs,
   looking,
@@ -126,28 +126,30 @@ const projects = [
       },
     ],
     image: looking,
+    preview_link:"https://lookingupbusinesssolutions.com",
     source_code_link: "https://github.com/BLACKEYE-ASTRO/LookingUpPortfolioWeb",
   },
   {
-    name: "Job IT",
+    name: "RelifeAgro Farm",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "RelifeAgro Farm is a comprehensive grocery shopping platform that enables users to explore and purchase fresh farm produce online. It offers a wide range of organic and locally sourced items, easy order management, and a smooth checkout experience — all designed to bring farm-fresh quality directly to customers’ doorsteps.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "mongodb",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "express",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: relifeagro_farm,
+    preview_link:"https://relife-agro-farm-ecommerce.vercel.app",
+    source_code_link: "https://github.com/BLACKEYE-ASTRO/RelifeAgroFarm-Ecommerce",
   },
   {
     name: "Trip Guide",
@@ -168,6 +170,7 @@ const projects = [
       },
     ],
     image: tripguide,
+    preview_link:"",
     source_code_link: "https://github.com/",
   },
 ];
