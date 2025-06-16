@@ -15,7 +15,7 @@ import {
   git,
   figma,
   relifeagro_farm,
-  tripguide,
+  stickychat,
   threejs,
   looking,
 } from "../assets";
@@ -114,7 +114,7 @@ const projects = [
   {
     name: "LookingUp Business Solutions ",
     description:
-      "Developed a modern and responsive frontend for a business solution website using React and Tailwind CSS. The website is designed to provide a seamless user experience, showcasing company services, client testimonials, and an interactive contact section.",
+      "Built a responsive business website featuring service highlights, client testimonials, and an interactive contact form for a smooth user experience.",
     tags: [
       {
         name: "react",
@@ -132,7 +132,7 @@ const projects = [
   {
     name: "RelifeAgro Farm",
     description:
-      "RelifeAgro Farm is a comprehensive grocery shopping platform that enables users to explore and purchase fresh farm produce online. It offers a wide range of organic and locally sourced items, easy order management, and a smooth checkout experience — all designed to bring farm-fresh quality directly to customers’ doorsteps.",
+      "RelifeAgro Farm is an online grocery platform offering fresh farm produce, organic items, and locally sourced goods. It ensures easy browsing, smooth checkout, and doorstep delivery for a farm-fresh experience.",
     tags: [
       {
         name: "react",
@@ -152,26 +152,26 @@ const projects = [
     source_code_link: "https://github.com/BLACKEYE-ASTRO/RelifeAgroFarm-Ecommerce",
   },
   {
-    name: "Trip Guide",
+    name: "Sticky Chat",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A real-time chat web application that allows users to send text and image messages, enabling seamless and interactive communication in a modern, user-friendly interface.",
     tags: [
       {
-        name: "nextjs",
+        name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "mongodb",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "express",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    preview_link:"",
-    source_code_link: "https://github.com/",
+    image: stickychat,
+    preview_link:"https://sticky-chats.vercel.app",
+    source_code_link: "https://github.com/BLACKEYE-ASTRO/Sticky-Chats",
   },
 ];
 
