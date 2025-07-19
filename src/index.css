@@ -81,6 +81,23 @@
   -webkit-text-fill-color: transparent;
 }
 
+.purple-text-gradient {
+  background: #8e2de2;
+  background: -webkit-linear-gradient(to top, #8e2de2, #4a00e0);
+  background: linear-gradient(to top, #8e2de2, #4a00e0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.orange-text-gradient {
+  background: #f12711;
+  background: -webkit-linear-gradient(to top, #f5af19, #f12711);
+  background: linear-gradient(to top, #f5af19, #f12711);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
 .blue-text-gradient {
   /* background: -webkit-linear-gradient(#eee, #333); */
   background: #56ccf2; /* fallback for old browsers */

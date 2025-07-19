@@ -22,7 +22,7 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
 import looking from "./lookingup business solutions.png"
-import carrent from "./carrent.png";
+import swiftai from "./Swift AI.png";
 import relifeagro_farm from "./relifeagro_farm.png";
 import stickychat from "./sticky_chats.png";
 
@@ -51,8 +51,8 @@ export {
   typescript,
   threejs,
   looking,
-  carrent,
   stickychat,
   Hero_Img,
-  relifeagro_farm
+  relifeagro_farm,
+  swiftai
 };
